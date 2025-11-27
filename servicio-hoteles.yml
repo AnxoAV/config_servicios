@@ -16,8 +16,9 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: http://${local_ip}:8761/eureka/
+            defaultZone: http://host.docker.internal:8761/eureka/
     instance:
+      hostname: host.docker.internal
       prefer-ip-address: false
       instance-id: servicio-hoteles
       non-secure-port: 8081
