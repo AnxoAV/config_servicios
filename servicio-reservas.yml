@@ -20,7 +20,7 @@ eureka:
       defaultZone: http://${local_ip}:8761/eureka/
   instance:
     prefer-ip-address: true
-    ip-address: ${local_ip}
+    ip-address: 127.0.0.1
     non-secure-port: 7000
     instance-id: servicio-reservas
 
