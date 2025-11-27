@@ -19,4 +19,6 @@ eureka:
             defaultZone: http://${local_ip}:8761/eureka/
     instance:
       prefer-ip-address: true
+      ip-address: 127.0.0.1
+      non-secure-port: 8080
       instance-id: servicio-hoteles
